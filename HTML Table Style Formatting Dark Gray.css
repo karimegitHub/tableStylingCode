@@ -1,0 +1,47 @@
+<style>
+    table {
+        border: 1px solid #1C6EA4;
+        background-color: #444444;
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+
+    table td,
+    table th {
+        border: 1px solid #AAAAAA;
+        padding: 10px;
+        vertical-align: top;
+        color: #CCCCCC;
+    }
+
+    table tbody td {
+        font-size: 13px;
+        color: #CCCCCC;
+    }
+
+    table thead {
+        background: #333333;
+        border-bottom: 2px solid #CCCCCC;
+    }
+
+    table thead th {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+        color: #FFFFFF;
+        border-left: 2px solid #D0E4F5;
+        width: 60%;
+    }
+
+    table thead th:first-child,
+    table td:first-child {
+        font-weight: bold;
+        width: auto;
+    }
+
+    table thead th:first-child {
+        border-left: none;
+    }
+</style>
