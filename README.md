@@ -1,4 +1,4 @@
-# tableStylingCode
+# HTML Table Styling Codes
 
 I often use this code to style my HTML tables created in Power Automate. It’s a simple and effective way to control how the table looks, ensuring the columns are sized correctly and that the table has a neat and professional appearance (credit to Reza Dorrani and Ryan Maclean).
 
