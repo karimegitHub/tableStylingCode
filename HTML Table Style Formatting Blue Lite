@@ -1,45 +1,53 @@
 <style>
+    /* Base table styling */
     table {
-        border: 1px solid #007BFF;
-        background-color: #E1F5FF;
-        width: 100%;
+        border: 1px solid #007BFF; /* Outer border */
+        background-color: #E1F5FF; /* Light blue background */
+        width: 100%;               /* Full width table */
         text-align: left;
-        border-collapse: collapse;
-        table-layout: fixed;
+        border-collapse: collapse; /* Merge borders */
+        table-layout: fixed;       /* Equal column widths */
     }
 
+    /* Cell and header cell styling */
     table td,
     table th {
-        border: 1px solid #AAAAAA;
+        border: 1px solid #AAAAAA; /* Inner cell borders */
         padding: 10px;
         vertical-align: top;
     }
 
+    /* Body cell font size */
     table tbody td {
         font-size: 13px;
     }
 
+    /* Header row styling */
     table thead {
-        background: #007BFF;
+        background: #007BFF;        /* Dark blue header background */
         border-bottom: 2px solid #444444;
     }
 
+    /* Header cell styling */
     table thead th {
         font-size: 15px;
         font-weight: bold;
         text-align: left;
-        color: #FFFFFF;
+        color: #FFFFFF;             /* White text */
         border-left: 2px solid #D0E4F5;
-        width: 60%;
+        width: 60%;     /* try 100% to begin with */
     }
 
+    /* First column special styling */
     table thead th:first-child,
     table td:first-child {
         font-weight: bold;
         width: auto;
     }
 
+    /* Remove left border for first header cell */
     table thead th:first-child {
         border-left: none;
     }
 </style>
+
