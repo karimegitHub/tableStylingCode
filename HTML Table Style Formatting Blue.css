@@ -1,45 +1,53 @@
 <style>
+    /* Base table styling */
     table {
-        border: 1px solid #1C6EA4;
-        background-color: #EEEEEE;
-        width: 100%;
-        text-align: left;
-        border-collapse: collapse;
-        table-layout: fixed;
+        border: 1px solid #1C6EA4;     /* Outer border in blue tone */
+        background-color: #EEEEEE;     /* Light grey background for the whole table */
+        width: 100%;                   /* Make table span full container width */
+        text-align: left;              /* Align text to the left in cells */
+        border-collapse: collapse;     /* Merge borders between adjacent cells */
+        table-layout: fixed;           /* Fix column widths (based on first row) */
     }
 
+    /* Styling for all table data and header cells */
     table td,
     table th {
-        border: 1px solid #AAAAAA;
-        padding: 10px;
-        vertical-align: top;  /* Added this line to align content to top */
+        border: 1px solid #AAAAAA;     /* Light grey inner cell borders */
+        padding: 10px;                 /* Inner spacing for readability */
+        vertical-align: top;           /* Align cell content to the top */
     }
 
+    /* Font size for table body cells */
     table tbody td {
         font-size: 13px;
     }
 
+    /* Styling for the table header row */
     table thead {
-        background: #1C6EA4;
-        border-bottom: 2px solid #444444;
+        background: #1C6EA4;           /* Blue background for header */
+        border-bottom: 2px solid #444444; /* Dark separator below header */
     }
 
+    /* Styling for header cells */
     table thead th {
         font-size: 15px;
         font-weight: bold;
         text-align: left;
-        color: #FFFFFF;
-        border-left: 2px solid #D0E4F5;
-        width: 60%;
+        color: #FFFFFF;                /* White text for contrast */
+        border-left: 2px solid #D0E4F5; /* Subtle left divider between columns */
+        width: 60%;                    /* Set default width for header cells. Try 100% if you get issues*/
     }
 
+    /* Bold and flexible width for first column (both header and body) */
     table thead th:first-child,
     table td:first-child {
         font-weight: bold;
         width: auto;
     }
 
+    /* Remove left border for the first header cell to match design */
     table thead th:first-child {
         border-left: none;
     }
 </style>
+
