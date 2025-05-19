@@ -1,45 +1,53 @@
 <style>
+    /* ===== Base table styling ===== */
     table {
-        border: 1px solid #cc0000;  /* darker red for border */
-        background-color: #f2dede;  /* lighter red for background */
-        width: 100%;
-        text-align: left;
-        border-collapse: collapse;
-        table-layout: fixed;
+        border: 1px solid #cc0000;       /* Dark red border around the entire table */
+        background-color: #f2dede;       /* Light red/pink background for the table */
+        width: 100%;                     /* Table stretches to full width of container */
+        text-align: left;                /* Left-align all text in cells */
+        border-collapse: collapse;       /* Remove space between borders */
+        table-layout: fixed;             /* Fixed layout to control column widths */
     }
 
+    /* ===== General styling for all table cells ===== */
     table td,
     table th {
-        border: 1px solid #a94442;  /* darker red for cell borders */
-        padding: 10px;
-        vertical-align: top;
+        border: 1px solid #a94442;       /* Medium red cell borders */
+        padding: 10px;                   /* Padding inside cells for spacing */
+        vertical-align: top;             /* Align content to the top of the cell */
     }
 
+    /* ===== Table body cell styling ===== */
     table tbody td {
-        font-size: 13px;
+        font-size: 13px;                 /* Slightly smaller font size for body cells */
     }
 
+    /* ===== Header row styling ===== */
     table thead {
-        background: #a94442;  /* darker red for header background */
-        border-bottom: 2px solid #891c1c;  /* even darker red for header bottom border */
+        background: #a94442;             /* Darker red background for the header row */
+        border-bottom: 2px solid #891c1c;/* Deep red bottom border for visual separation */
     }
 
+    /* ===== Header cell styling ===== */
     table thead th {
-        font-size: 15px;
-        font-weight: bold;
-        text-align: left;
-        color: #FFFFFF;  /* white for text color */
-        border-left: 2px solid #cc0000;  /* border color for the header */
-        width: 60%;
+        font-size: 15px;                 /* Larger font size for header cells */
+        font-weight: bold;               /* Bold text for emphasis */
+        text-align: left;                /* Left-align header text */
+        color: #FFFFFF;                  /* White text for contrast against dark red */
+        border-left: 2px solid #cc0000;  /* Red left border for header cells */
+        width: 60%;                      /* Set width for header cells */
     }
 
+    /* ===== First column styling (header and body) ===== */
     table thead th:first-child,
     table td:first-child {
-        font-weight: bold;
-        width: auto;
+        font-weight: bold;               /* Emphasise first column with bold text */
+        width: auto;                     /* Let first column size based on content */
     }
 
+    /* ===== Remove left border from the first header cell ===== */
     table thead th:first-child {
-        border-left: none;
+        border-left: none;               /* Cleaner look on the far-left side */
     }
 </style>
+
