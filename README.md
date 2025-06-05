@@ -4,4 +4,10 @@ I often use this code to style my HTML tables created in Power Automate. It’s 
 
 This CSS code applies various styles to a table, including setting borders, text alignment, background colours, and spacing. It also has specific rules for the first column and adjusts the appearance of the header row to make it stand out with a bold, white font on a dark blue background.
 
+
+## Table formatting problems
+Try 100% or delete this line if you get issues
+
+        width: 60%;   
+        
 https://elliskarim.com
