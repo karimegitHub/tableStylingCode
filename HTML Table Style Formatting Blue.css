@@ -1,53 +1,42 @@
 <style>
-    /* Base table styling */
+    /* Outlook and Power Automate compatible table styling */
     table {
-        border: 1px solid #1C6EA4;     /* Outer border in blue tone */
-        background-color: #EEEEEE;     /* Light grey background for the whole table */
-        width: 100%;                   /* Make table span full container width */
-        text-align: left;              /* Align text to the left in cells */
-        border-collapse: collapse;     /* Merge borders between adjacent cells */
-        table-layout: fixed;           /* Fix column widths (based on first row) */
+        border: 1px solid #1C6EA4;
+        background-color: #F9F9F9;
+        width: 100% !important;
+        max-width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        font-family: Arial, sans-serif;
     }
 
-    /* Styling for all table data and header cells */
+    /* Cell padding and alignment */
     table td,
     table th {
-        border: 1px solid #AAAAAA;     /* Light grey inner cell borders */
-        padding: 10px;                 /* Inner spacing for readability */
-        vertical-align: top;           /* Align cell content to the top */
-    }
-
-    /* Font size for table body cells */
-    table tbody td {
+        border: 1px solid #CCCCCC;
+        padding: 10px 12px;
+        vertical-align: top;
         font-size: 13px;
     }
 
-    /* Styling for the table header row */
+    /* Header row styling */
     table thead {
-        background: #1C6EA4;           /* Blue background for header */
-        border-bottom: 2px solid #444444; /* Dark separator below header */
+        background-color: #1C6EA4;
     }
 
-    /* Styling for header cells */
+    /* Header cell typography */
     table thead th {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: bold;
+        color: #FFFFFF;
         text-align: left;
-        color: #FFFFFF;                /* White text for contrast */
-        border-left: 2px solid #D0E4F5; /* Subtle left divider between columns */
-        width: 60%;                    /* Set default width for header cells. Try 100% if you get issues*/
+        border: 1px solid #1C6EA4;
     }
 
-    /* Bold and flexible width for first column (both header and body) */
-    table thead th:first-child,
+    /* First column emphasis */
     table td:first-child {
         font-weight: bold;
-        width: auto;
-    }
-
-    /* Remove left border for the first header cell to match design */
-    table thead th:first-child {
-        border-left: none;
     }
 </style>
-
